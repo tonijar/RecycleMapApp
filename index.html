@@ -5,12 +5,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Recycle Map</title>
 		<link rel="stylesheet" href="lib/leaflet.css" />
-		<!--[if lte IE 8]>
-		<link rel="stylesheet" href="lib/leaflet.ie.css" />
-		<![endif]-->
-
 		<script src="lib/leaflet.js"></script>
-		
+
 		<!-- GeoCSV: https://github.com/joker-x/Leaflet.geoCSV -->
 		<script src="lib/leaflet.geocsv.js"></script>
 
@@ -30,8 +26,7 @@
 		</script>
 	</head>
 	<body>
-		<h1>Recycle Map</h1>
-		<div id="map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"> </div>
+		<div id="map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
 		<script type="text/javascript">
 			// Show map centered at current position.
 			var map = L.map('map');
@@ -61,45 +56,41 @@
 					var popup = '';
 					for (var clave in feature.properties) {
 						var title = geo_csv.getPropertyTitle(clave);
-						popup += '<b>' + title + '</b><br />' + feature.properties[clave] + '<br /><br />';
+						popup += '<b>' + title + ': </b>';
+						if (title == "Web") {
+							popup += '<a href="' + feature.properties[clave] + '" target="blank">Enlace</a><br /><br />';
+						} else {
+							popup += feature.properties[clave] + '<br /><br />';
+						}
 					}
 					layer.bindPopup(popup);
-				}/*,
-				 pointToLayer : function(feature, latlng) {
-				 return L.marker(latlng, {
-				 icon:L.icon({
-				 iconUrl: 'marcador-custo.png',
-				 shadowUrl: 'marker-shadow.png',
-				 iconSize: [25,41],
-				 shadowSize: [41, 41],
-				 shadowAnchor: [13, 20]
-				 })
-				 });
-				 }*/
+				},
+				pointToLayer : function(feature, latlng) {
+					return L.marker(latlng, {
+						icon : L.icon({
+							iconUrl : 'images/recycle-marker-icon.png',
+							shadowUrl : 'lib/images/marker-shadow.png',
+							iconSize : [41, 41],
+							shadowSize : [41, 41],
+							shadowAnchor : [13, 20]
+						})
+					});
+				}
 			});
 
+			// Retrieve locations CSV and add them to map
 			$.ajax({
 				type : 'GET',
 				dataType : 'text',
 				url : 'locations.csv',
 				error : function() {
-					alert('No se pudieron cargar los datos');
+					alert('No se han podido cargar los datos');
 				},
 				success : function(csv) {
 					geo_csv.addData(csv);
 					map.addLayer(geo_csv);
 				}
 			});
-
-			// Popup for positions
-			// var popup = L.popup();
-			// function onMapClick(e) {
-			// popup.setLatLng(e.latlng).setContent("You clicked the map at " + e.latlng.toString()).openOn(map);
-			// }
-			//
-			//
-			// map.on('click', onMapClick);
-
 		</script>
 	</body>
 </html>
