@@ -3,19 +3,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>New Web Project</title>
-		<link rel="stylesheet" href="../lib/leaflet.css" />
+		<title>Recycle Map</title>
+		<link rel="stylesheet" href="lib/leaflet.css" />
 		<!--[if lte IE 8]>
-		<link rel="stylesheet" href="../lib/leaflet.ie.css" />
+		<link rel="stylesheet" href="lib/leaflet.ie.css" />
 		<![endif]-->
 
-		<script src="../lib/leaflet.js"></script>
+		<script src="lib/leaflet.js"></script>
 		
 		<!-- GeoCSV: https://github.com/joker-x/Leaflet.geoCSV -->
-		<script src="../lib/leaflet.geocsv.js"></script>
+		<script src="lib/leaflet.geocsv.js"></script>
 
 		<!-- jQuery 1.8.3: http://jquery.com/ -->
-		<script src="../lib/jquery.js"></script>
+		<script src="lib/jquery.js"></script>
 
 		<script type="text/javascript">
 			// Wen current location successfully found --> add circle
@@ -30,11 +30,11 @@
 		</script>
 	</head>
 	<body>
-		<h1>New Web Project Page</h1>
-		<div id="mapa" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+		<h1>Recycle Map</h1>
+		<div id="map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"> </div>
 		<script type="text/javascript">
 			// Show map centered at current position.
-			var map = L.map('mapa');
+			var map = L.map('map');
 			map.locate({
 				setView : true,
 				maxZoom : 14
