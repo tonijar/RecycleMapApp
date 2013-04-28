@@ -1,0 +1,11 @@
+CACHE MANIFEST
+/csv/locations.csv
+/images/recycle-marker-favicon.png
+/images/recycle-marker-icon-min.png
+/lib/images/layers.png
+/lib/images/marker-shadow.png
+/lib/jquery.js
+/lib/leaflet.css
+/lib/leaflet.geocsv.js
+/lib/leaflet.js
+index.html
