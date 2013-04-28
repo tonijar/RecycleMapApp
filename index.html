@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" manifest="recyclemapapp.appcache">
 	<head>
-		<title>Recycle Map</title>
+		<title>Mapa del reciclaje</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 		<meta charset="ISO-8859-1"/>
 		<meta name="viewport" content="width=device-width"/>
@@ -40,7 +40,9 @@
 				maxZoom : 14
 			})
 			L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution : 'Map data &copy; <a href="http://openstreetmap.org" target="blank">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="blank">CC-BY-SA</a>, Imagery by <a href="http://cloudmade.com" target="blank">CloudMade</a>',
+				attribution : 'Maps by &copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors \
+				 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">\
+				 <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png" /></a>',
 				maxZoom : 19
 			}).addTo(map);
 
