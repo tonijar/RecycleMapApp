@@ -14,9 +14,17 @@
 
 		<!-- jQuery 1.9.1: http://jquery.com/ -->
 		<script src="lib/jquery.js"></script>
+		
+		<!-- GeoSearch: https://github.com/smeijer/L.GeoSearch -->
+		<script src="lib/l.control.geosearch.js"></script>
+		<script src="lib/l.geosearch.provider.openstreetmap.js"></script>
+		<link rel="stylesheet" href="lib/l.geosearch.css" />
+
+		<!-- https://github.com/maximeh/leaflet.bouncemarker -->
+		<script src="lib/bouncemarker.js"></script>
 
 		<script type="text/javascript">
-			// Wen current location successfully found --> add circle
+			// When current location successfully found --> add circle
 			function onLocationFound(e) {
 				L.circle(e.latlng, e.accuracy / 2).addTo(map);
 			}
@@ -100,6 +108,19 @@
 					map.addLayer(geo_csv);
 				}
 			});
+			
+			// Add geo search
+			new L.Control.GeoSearch({
+	            provider: new L.GeoSearch.Provider.OpenStreetMap()
+	        }).addTo(map);
+	        
+	        // Add metric scale
+	        L.control.scale(
+	        	{
+	        		metric : true,
+	        		imperial : false
+	        	}
+	        ).addTo(map);
 		</script>
 	</body>
 </html>
