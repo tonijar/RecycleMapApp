@@ -3,30 +3,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml" manifest="recyclemapapp.appcache">
 	<head>
 		<title>Mapa del reciclaje</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
-		<meta charset="ISO-8859-1"/>
 		<meta name="viewport" content="width=device-width"/>
-		<link rel="stylesheet" href="lib/leaflet.css" />
-		<script src="lib/leaflet.js"></script>
-
-		<!-- GeoCSV: https://github.com/joker-x/Leaflet.geoCSV -->
-		<script src="lib/leaflet.geocsv.js"></script>
-
-		<!-- jQuery 1.9.1: http://jquery.com/ -->
-		<script src="lib/jquery.js"></script>
 		
-		<!-- GeoSearch: https://github.com/smeijer/L.GeoSearch -->
-		<script src="lib/l.control.geosearch.js"></script>
-		<script src="lib/l.geosearch.provider.openstreetmap.js"></script>
-		<link rel="stylesheet" href="lib/l.geosearch.css" />
+		<!-- Leaflet library: http://leafletjs.com -->
+		<!-- GeoCSV plugin: https://github.com/joker-x/Leaflet.geoCSV -->
+		<!-- jQuery 1.9.1 library: http://jquery.com/ -->
+		<!-- GeoSearch plugin: https://github.com/smeijer/L.GeoSearch -->
+		<!-- Locate control plugin: https://github.com/domoritz/leaflet-locatecontrol -->
+		<!-- Full screen plugin: http://brunob.github.com/leaflet.fullscreen -->
+		<!-- Zoom slider plugin: http://kartena.github.io/Leaflet.zoomslider/ -->
+		<!-- Marker cluster plugin: https://github.com/Leaflet/Leaflet.markercluster -->
 
-		<!-- https://github.com/maximeh/leaflet.bouncemarker -->
-		<script src="lib/bouncemarker.js"></script>
+		<link rel="stylesheet" href="lib/leaflet.css" />
+		<link rel="stylesheet" href="lib/l.geosearch.css" />
+		<link rel="stylesheet" href="lib/L.Control.Locate.css" />
+		<link rel="stylesheet" href="lib/Control.FullScreen.css" />
+		<link rel="stylesheet" href="lib/L.Control.Zoomslider.css" />
+		<link rel="stylesheet" href="lib/MarkerCluster.Default.css" />
+
+		<script type="text/javascript" src="lib/leaflet.js"></script>
+		<script type="text/javascript" src="lib/leaflet.geocsv.js"></script>
+		<script type="text/javascript" src="lib/jquery.js"></script>
+		<script type="text/javascript" src="lib/l.control.geosearch.js"></script>
+ 		<script type="text/javascript" src="lib/L.Control.Locate.js" ></script>
+ 		<script type="text/javascript" src="lib/Control.FullScreen.js"></script>
+ 		<script type="text/javascript" src="lib/L.Control.Zoomslider.js" ></script>
+ 		<script type="text/javascript" src="lib/leaflet.markercluster.js" ></script>
 
 		<script type="text/javascript">
 			// When current location successfully found --> add circle
 			function onLocationFound(e) {
-				L.circle(e.latlng, e.accuracy / 2).addTo(map);
+				//L.circle(e.latlng, e.accuracy / 2).addTo(map);
 			}
 
 			// When current location fails --> alert message
@@ -39,30 +46,64 @@
 		<link href="images/recycle-marker-favicon.png" rel="icon" type="image/x-icon" />
 	</head>
 	<body>
+		<noscript>
+	  		<p>Bienvenido a Mapa del Reciclaje</p>
+	  		<p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript. 
+	  			Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.
+	  		</p>
+		</noscript>
 		<div id="map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"> </div>
 		<script type="text/javascript">
 			// Show map centered at current position.
 			var map = L.map('map');
+			// Current location
 			map.locate({
 				setView : true,
-				maxZoom : 14
+				maxZoom : 18
 			})
+
+			// Location control			
+			L.control.locate({
+				position: 'topleft',  // set the location of the control
+			    drawCircle: true,  // controls whether a circle is drawn that shows the uncertainty about the location
+			    metric: true,  // use metric or imperial units
+			    onLocationError: function(err) {alert(err.message)},  // define an error callback function
+			    title: "Posición actual",  // title of the locat control
+			    popupText: ["Estás aproximadamente a ", " de aquí"],  // text to appear if user clicks on circle
+			    setView: true, // automatically sets the map view to the user's location
+			    locateOptions: {enableHighAccuracy: true}  // define location options e.g enableHighAccuracy: true).addTo(map);
+			}).addTo(map);
+			
 			L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution : 'Maps by &copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors \
 				 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">\
 				 <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png" /></a>',
-				maxZoom : 19
+				maxZoom : 18
+			}).addTo(map);
+			
+			// Add metric scale
+	        L.control.scale(
+	        	{
+	        		metric : true,
+	        		imperial : false
+	        	}
+	        ).addTo(map);
+
+			// Fullscreen control
+			L.control.fullscreen({
+			  position: 'topright',
+			  title: 'Mostrar en pantalla completa'
 			}).addTo(map);
 
 			// Location functions
 			map.on('locationfound', onLocationFound);
 			map.on('locationerror', onLocationError);
 
-			// Custom locations
+			// Cluster of custom locations
+			var markers = new L.MarkerClusterGroup();
 			var geo_csv = {};
 			map.removeLayer(geo_csv);
 			geo_csv = L.geoCsv(null, {
-				titles : ['lat', 'lng', 'popup'],
 				fieldSeparator : ';',
 				lineSeparator : '\n',
 				deleteDobleQuotes : true,
@@ -82,24 +123,26 @@
 					layer.bindPopup(popup);
 				},
 				pointToLayer : function(feature, latlng) {
-					return L.marker(latlng, {
+					var marker = L.marker(latlng, {
 						icon : L.icon({
-							iconUrl : 'images/recycle-marker-icon-min.png',
+							iconUrl : 'images/recycle-marker-icon-black-min.png',
 							shadowUrl : 'lib/images/marker-shadow.png',
-							iconSize : [41, 41],
+							iconSize : [29, 41],
 							shadowSize : [41, 41],
 							shadowAnchor : [13, 20]
 						})
 					});
+					markers.addLayer(marker);
+					return marker;
 				}
 			});
+			map.addLayer(markers);
 
 			// Retrieve locations CSV and add them to map
 			$.ajax({
 				type : 'GET',
 				dataType : 'text',
 				url : 'csv/locations.csv',
-				contentType: "text/csv;charset=ISO-8859-1",
 				error : function() {
 					alert('No se han podido cargar los datos');
 				},
@@ -108,19 +151,16 @@
 					map.addLayer(geo_csv);
 				}
 			});
-			
+		</script>
+		
+		<!-- GeoSearch: https://github.com/smeijer/L.GeoSearch -->
+		<script type="text/javascript" src="lib/l.geosearch.provider.openstreetmap.js"></script>
+		
+		<script type="text/javascript">
 			// Add geo search
 			new L.Control.GeoSearch({
 	            provider: new L.GeoSearch.Provider.OpenStreetMap()
 	        }).addTo(map);
-	        
-	        // Add metric scale
-	        L.control.scale(
-	        	{
-	        		metric : true,
-	        		imperial : false
-	        	}
-	        ).addTo(map);
 		</script>
 	</body>
 </html>
