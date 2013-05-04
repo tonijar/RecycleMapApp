@@ -1,12 +1,19 @@
 ﻿Nombre;Dirección;Código postal;Localidad;Provincia;Teléfono;Web;lat;lng
-Punt Blau 1 (Carretera de Castellar);Ctra. de Prats de Lluçanès, 899;08207;Sabadell;Barcelona;900222234;http://www.sabadell.cat/es/fitxa-repertori/10453-repertori-5628;41.5741446;2.0940998
-Punt Blau 2 (Parc Central del Vallès);Carrer Moragas i Barret;08204;Sabadell;Barcelona;900222234;http://www.sabadell.cat/es/fitxa-repertori/11296-repertori-23284;41.5222042;2.1091547
-Punt Blau 3 (Can Llong);Ronda Europa, 310;08206;Sabadell;Barcelona;900222234;http://sabadell.cat/ca/fitxa-repertori/11568-repertori-24445;41.5562405;2.0812215
-Punt Verd de Barri - Vallvidrera;C Reis Catòlics, 40;08017;Barcelona;Barcelona;650437469;http://guia.bcn.cat/punt-verd-de-barri-vallvidrera_99400028442.html;41.4164437;2.1014137
-Punt Verd de Barri - Sant Andreu;C Rovira i Virgili, 14;08030;Barcelona;Barcelona;933456358;http://guia.bcn.cat/punt-verd-de-barri-sant-andreu_99400035497.html;41.428138;2.1889936
-Punt Verd de Zona - Deixalleria de Les Corts-Pedralbes;Av Esplugues, 58;08034;Barcelona;Barcelona;932032219;http://guia.bcn.cat/punt-verd-de-zona-deixalleria-de-les-corts-pedralbes_297122918.html;41.3890168;2.1081328
-Punt Verd de Zona - Deixalleria de Vallbona;Castelladral, 6;08033;Barcelona;Barcelona;933502140;http://guia.bcn.cat/punt-verd-de-zona-deixalleria-de-vallbona_297123401.html;41.4638776;2.185253
-Punt Verd de Zona - Deixalleria de Montjuïc;Foc, 56;08038;Barcelona;Barcelona;932231646;http://guia.bcn.cat/punt-verd-de-zona-deixalleria-de-montjuic_98162102313.html;41.3553116;2.1396156
-Punt Verd de Zona - Deixalleria Fòrum;Av Litoral, 115;08005;Barcelona;Barcelona;933560929;http://guia.bcn.cat/punt-verd-de-zona-deixalleria-forum_99400121453.html;41.403673;2.2158595
-Punt Verd de Zona - Deixalleria de Collserola;C Collserola, 2;08035;Barcelona;Barcelona;934178128;http://guia.bcn.cat/punt-verd-de-zona-deixalleria-de-collserola_94075112530.html;41.4162968;2.1361024
-Punt Verd de Zona - Deixalleria Sant Andreu;C Caracas, 46;08030;Barcelona;Barcelona;933457623;http://guia.bcn.cat/punt-verd-de-zona-deixalleria-sant-andreu_297122514.html;41.4455409;2.2023375
+Punt Blau 1 (Carretera de Castellar);Ctra. de Prats de Lluçanès, 899;08207;Sabadell;Barcelona;900222234;http://bit.ly/10cfCOC;41.5741446;2.0940998
+Punt Blau 2 (Parc Central del Vallès);Carrer Moragas i Barret;08204;Sabadell;Barcelona;900222234;http://bit.ly/18DIbbF;41.5222042;2.1091547
+Punt Blau 3 (Can Llong);Ronda Europa, 310;08206;Sabadell;Barcelona;900222234;http://bit.ly/15gbEMB;41.5562405;2.0812215
+Punt Verd de Barri - Vallvidrera;C Reis Catòlics, 40;08017;Barcelona;Barcelona;650437469;http://bit.ly/137s1HK;41.4164437;2.1014137
+Punt Verd de Barri - Sant Andreu;C Rovira i Virgili, 14;08030;Barcelona;Barcelona;933456358;http://bit.ly/YuCQnE;41.428138;2.1889936
+Punt Verd de Zona - Deixalleria de Les Corts-Pedralbes;Av Esplugues, 58;08034;Barcelona;Barcelona;932032219;http://bit.ly/101SgOy;41.3890168;2.1081328
+Punt Verd de Zona - Deixalleria de Vallbona;Castelladral, 6;08033;Barcelona;Barcelona;933502140;http://bit.ly/126qorv;41.4638776;2.185253
+Punt Verd de Zona - Deixalleria de Montjuïc;Foc, 56;08038;Barcelona;Barcelona;932231646;http://bit.ly/15gbLHT;41.3553116;2.1396156
+Punt Verd de Zona - Deixalleria Fòrum;Av Litoral, 115;08005;Barcelona;Barcelona;933560929;http://bit.ly/ZGTeQL;41.403673;2.2158595
+Punt Verd de Zona - Deixalleria de Collserola;C Collserola, 2;08035;Barcelona;Barcelona;934178128;http://bit.ly/18DIF1g;41.4162968;2.1361024
+Punt Verd de Zona - Deixalleria Sant Andreu;C Caracas, 46;08030;Barcelona;Barcelona;933457623;http://bit.ly/ZuUBhQ;41.4455409;2.2023375
+Punto Limpio de Arrecife;Avenida de los Geranios s/n;35500;Arrecife;Las Palmas;928810100;http://bit.ly/126qwr4;28.9762136;-13.5561222
+Punto Limpio de Playa Honda;Zona industrial de Playa Honda, C/ Arrecife;35509;Playa Honda;Las Palmas;928810100;http://bit.ly/126qwr4;28.9539476;-13.5914198
+Punto Limpio de Playa Blanca;C/ Femés;35580;Playa Blanca;Las Palmas;928810100;http://bit.ly/126qwr4;28.865;-13.8305556
+Punto Limpio de Puerto del Carmen;C/ Tías;35510;Puerto del Carmen;Las Palmas;928810100;http://bit.ly/126qwr4;28.9239086;-13.6632734
+Punto Limpio Lomo del Jable (Lajares);La Oliva;35640;La Oliva;Las Palmas;928862300;http://bit.ly/109qITq;28.6100767;-13.9267252
+Punto Limpio Risco Prieto;Puerto del Rosario;35649;Puerto del Rosario;Las Palmas;928862300;http://bit.ly/109qITq;28.5310413;-13.9376021
+Punto Limpio Fuente Bartolo;Tuineje;35629;Tuineje;Las Palmas;928862300;http://bit.ly/109qITq;28.327262;-14.047254

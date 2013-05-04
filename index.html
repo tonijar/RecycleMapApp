@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" manifest="recyclemapapp.appcache">
 	<head>
 		<title>Mapa del reciclaje</title>
@@ -75,8 +74,8 @@
 			}).addTo(map);
 			
 			L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution : 'Maps by &copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors \
-				 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">\
+				attribution : 'Maps by &copy; <a href="http://openstreetmap.org" target="_blank" >OpenStreetMap</a> contributors \
+				 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank" >\
 				 <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png" /></a>',
 				maxZoom : 18
 			}).addTo(map);
@@ -114,11 +113,11 @@
 						var title = geo_csv.getPropertyTitle(clave);
 						popup += '<b>' + title + ': </b>';
 						if (title == "Web") {
-							popup += '<a href="' + feature.properties[clave] + '" target="blank">Enlace</a>';
+							popup += '<a href="' + feature.properties[clave] + '" target="_blank" >Enlace</a>';
 						} else {
 							popup += feature.properties[clave];
 						}
-						popup += '<br />';
+						popup += '<br/>';
 					}
 					layer.bindPopup(popup);
 				},

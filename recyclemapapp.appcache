@@ -1,8 +1,8 @@
 CACHE MANIFEST
-/csv/*.csv
-/images/*.gif
-/images/*.png
-/lib/images/*.png
-/lib/*.js
-/lib/*.css
-*.html
+csv/locations.csv
+images/recycle-marker-favicon.png
+images/recycle-marker-icon-black-min.png
+lib/images/*.png
+lib/*.js
+lib/*.css
+index.html
