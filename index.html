@@ -111,10 +111,15 @@
 					var popup = '';
 					for (var clave in feature.properties) {
 						var title = geo_csv.getPropertyTitle(clave);
-						popup += '<b>' + title + ': </b>';
-						if (title == "Web") {
-							popup += '<a href="' + feature.properties[clave] + '" target="_blank" >Enlace</a>';
-						} else {
+						
+						if (title == "Nombre") {
+							popup += '<b>' + feature.properties[clave] + '</b>';
+						}
+						else if (title == "Web") {
+							popup += '<a href="' + feature.properties[clave] + '" target="_blank" >Enlace a web</a>';
+						}
+						else {
+							popup += '<b>' + title + ': </b>';
 							popup += feature.properties[clave];
 						}
 						popup += '<br/>';
