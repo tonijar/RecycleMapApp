@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" manifest="recyclemapapp.appcache">
 	<head>
 		<title>Mapa del reciclaje</title>
+		<meta name="language" content="es" />
 		<meta name="viewport" content="width=device-width"/>
 		
 		<!-- Leaflet library: http://leafletjs.com -->
@@ -13,12 +14,12 @@
 		<!-- Zoom slider plugin: http://kartena.github.io/Leaflet.zoomslider/ -->
 		<!-- Marker cluster plugin: https://github.com/Leaflet/Leaflet.markercluster -->
 
-		<link rel="stylesheet" href="lib/leaflet.css" />
-		<link rel="stylesheet" href="lib/l.geosearch.css" />
-		<link rel="stylesheet" href="lib/L.Control.Locate.css" />
-		<link rel="stylesheet" href="lib/Control.FullScreen.css" />
-		<link rel="stylesheet" href="lib/L.Control.Zoomslider.css" />
-		<link rel="stylesheet" href="lib/MarkerCluster.Default.css" />
+		<link rel="stylesheet" type="text/css" href="lib/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="lib/l.geosearch.css" />
+		<link rel="stylesheet" type="text/css" href="lib/L.Control.Locate.css" />
+		<link rel="stylesheet" type="text/css" href="lib/Control.FullScreen.css" />
+		<link rel="stylesheet" type="text/css" href="lib/L.Control.Zoomslider.css" />
+		<link rel="stylesheet" type="text/css" href="lib/MarkerCluster.Default.css" />
 
 		<script type="text/javascript" src="lib/leaflet.js"></script>
 		<script type="text/javascript" src="lib/leaflet.geocsv.js"></script>
@@ -28,21 +29,10 @@
  		<script type="text/javascript" src="lib/Control.FullScreen.js"></script>
  		<script type="text/javascript" src="lib/L.Control.Zoomslider.js" ></script>
  		<script type="text/javascript" src="lib/leaflet.markercluster.js" ></script>
-
-		<script type="text/javascript">
-			// When current location successfully found --> add circle
-			function onLocationFound(e) {
-				//L.circle(e.latlng, e.accuracy / 2).addTo(map);
-			}
-
-			// When current location fails --> alert message
-			function onLocationError(e) {
-				alert(e.message);
-			}
-		</script>
+ 		<script type="text/javascript" src="js/map-up.js" ></script>
 
 		<!-- Favourite icon -->
-		<link href="images/recycle-marker-favicon.png" rel="icon" type="image/x-icon" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
 		<noscript>
@@ -51,120 +41,29 @@
 	  			Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.
 	  		</p>
 		</noscript>
-		<div id="map" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"> </div>
-		<script type="text/javascript">
-			// Show map centered at current position.
-			var map = L.map('map');
-			// Current location
-			map.locate({
-				setView : true,
-				maxZoom : 18
-			})
-
-			// Location control			
-			L.control.locate({
-				position: 'topleft',  // set the location of the control
-			    drawCircle: true,  // controls whether a circle is drawn that shows the uncertainty about the location
-			    metric: true,  // use metric or imperial units
-			    onLocationError: function(err) {alert(err.message)},  // define an error callback function
-			    title: "Posición actual",  // title of the locat control
-			    popupText: ["Estás aproximadamente a ", " de aquí"],  // text to appear if user clicks on circle
-			    setView: true, // automatically sets the map view to the user's location
-			    locateOptions: {enableHighAccuracy: true}  // define location options e.g enableHighAccuracy: true).addTo(map);
-			}).addTo(map);
-			
-			L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution : 'Maps by &copy; <a href="http://openstreetmap.org" target="_blank" >OpenStreetMap</a> contributors \
-				 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank" >\
-				 <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png" /></a>',
-				maxZoom : 18
-			}).addTo(map);
-			
-			// Add metric scale
-	        L.control.scale(
-	        	{
-	        		metric : true,
-	        		imperial : false
-	        	}
-	        ).addTo(map);
-
-			// Fullscreen control
-			L.control.fullscreen({
-			  position: 'topright',
-			  title: 'Mostrar en pantalla completa'
-			}).addTo(map);
-
-			// Location functions
-			map.on('locationfound', onLocationFound);
-			map.on('locationerror', onLocationError);
-
-			// Cluster of custom locations
-			var markers = new L.MarkerClusterGroup();
-			var geo_csv = {};
-			map.removeLayer(geo_csv);
-			geo_csv = L.geoCsv(null, {
-				fieldSeparator : ';',
-				lineSeparator : '\n',
-				deleteDobleQuotes : true,
-				firstLineTitles : true,
-				onEachFeature : function(feature, layer) {
-					var popup = '';
-					for (var clave in feature.properties) {
-						var title = geo_csv.getPropertyTitle(clave);
-						
-						if (title == "Nombre") {
-							popup += '<b>' + feature.properties[clave] + '</b>';
-						}
-						else if (title == "Web") {
-							popup += '<a href="' + feature.properties[clave] + '" target="_blank" >Enlace a web</a>';
-						}
-						else {
-							popup += '<b>' + title + ': </b>';
-							popup += feature.properties[clave];
-						}
-						popup += '<br/>';
-					}
-					layer.bindPopup(popup);
-				},
-				pointToLayer : function(feature, latlng) {
-					var marker = L.marker(latlng, {
-						icon : L.icon({
-							iconUrl : 'images/recycle-marker-icon-black-min.png',
-							shadowUrl : 'lib/images/marker-shadow.png',
-							iconSize : [29, 41],
-							shadowSize : [41, 41],
-							shadowAnchor : [13, 20]
-						})
-					});
-					markers.addLayer(marker);
-					return marker;
-				}
-			});
-			map.addLayer(markers);
-
-			// Retrieve locations CSV and add them to map
-			$.ajax({
-				type : 'GET',
-				dataType : 'text',
-				url : 'csv/locations.csv',
-				error : function() {
-					alert('No se han podido cargar los datos');
-				},
-				success : function(csv) {
-					geo_csv.addData(csv);
-					map.addLayer(geo_csv);
-				}
-			});
-		</script>
+		<div id="fb-root"> </div>
+		<div id="header" style="position: absolute; top: 0%; left: 0; width: 100%; height: 10%;">
+			<div id="left-header" style="float: left; width: 20%;">
+				<p>Logotipo</p>
+			</div>
+			<div id="central-header" style="float: left; width: 60%;">
+					<p>Mapa del reciclaje</p>
+			</div>
+			<div id="right-header" style="float: left; width: 20%;">
+				<ul>
+					<li><div class="fb-follow" data-href="https://www.facebook.com/zuck" data-layout="button_count" data-show-faces="true" data-width="450"> </div></li>
+					<li><a href="https://twitter.com/maparecicla_es" rel="nofollow" class="twitter-follow-button" data-show-count="true" data-lang="es"> </a></li>
+					<li><a href="https://twitter.com/share" rel="nofollow" class="twitter-share-button" data-lang="es"> </a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="map" style="position: absolute; top: 10%; left: 0; width: 100%; height: 85%;"> </div>
+		<div id="bottom" style="position: absolute; top: 95%; left: 0; width: 100%; height: 10%;">
+			<a href="mailto:contacto@mapadelreciclaje.hol.es?Subject=Contacto" rel="nofollow">Contacto</a>
+		</div>
 		
 		<!-- GeoSearch: https://github.com/smeijer/L.GeoSearch -->
 		<script type="text/javascript" src="lib/l.geosearch.provider.openstreetmap.js"></script>
-		
-		<script type="text/javascript">
-			// Add geo search
-			new L.Control.GeoSearch({
-	            provider: new L.GeoSearch.Provider.OpenStreetMap()
-	        }).addTo(map);
-		</script>
+		<script type="text/javascript" src="js/map-down.js" ></script>
 	</body>
 </html>
