@@ -2,68 +2,66 @@
 <html xmlns="http://www.w3.org/1999/xhtml" manifest="recyclemapapp.appcache">
 	<head>
 		<title>Mapa del reciclaje</title>
-		<meta name="language" content="es" />
+		<meta name="language" content="es"/>
 		<meta name="viewport" content="width=device-width"/>
-		
-		<!-- Leaflet library: http://leafletjs.com -->
-		<!-- GeoCSV plugin: https://github.com/joker-x/Leaflet.geoCSV -->
-		<!-- jQuery 1.9.1 library: http://jquery.com/ -->
-		<!-- GeoSearch plugin: https://github.com/smeijer/L.GeoSearch -->
-		<!-- Locate control plugin: https://github.com/domoritz/leaflet-locatecontrol -->
-		<!-- Full screen plugin: http://brunob.github.com/leaflet.fullscreen -->
-		<!-- Zoom slider plugin: http://kartena.github.io/Leaflet.zoomslider/ -->
-		<!-- Marker cluster plugin: https://github.com/Leaflet/Leaflet.markercluster -->
+		<meta name="keywords" content="Mapa, Reciclaje, Ecología"/>
+		<meta name="description" content="Mapa del reciclaje"/>
 
-		<link rel="stylesheet" type="text/css" href="lib/leaflet.css" />
-		<link rel="stylesheet" type="text/css" href="lib/l.geosearch.css" />
-		<link rel="stylesheet" type="text/css" href="lib/L.Control.Locate.css" />
-		<link rel="stylesheet" type="text/css" href="lib/Control.FullScreen.css" />
-		<link rel="stylesheet" type="text/css" href="lib/L.Control.Zoomslider.css" />
-		<link rel="stylesheet" type="text/css" href="lib/MarkerCluster.Default.css" />
+		<link rel="stylesheet" type="text/css" href="lib/leaflet.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/l.geosearch.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/L.Control.Locate.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/Control.FullScreen.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/L.Control.Zoomslider.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/MarkerCluster.Default.css"/>
+		<link rel="stylesheet" type="text/css" href="css/map.css"/>
 
 		<script type="text/javascript" src="lib/leaflet.js"></script>
 		<script type="text/javascript" src="lib/leaflet.geocsv.js"></script>
 		<script type="text/javascript" src="lib/jquery.js"></script>
 		<script type="text/javascript" src="lib/l.control.geosearch.js"></script>
- 		<script type="text/javascript" src="lib/L.Control.Locate.js" ></script>
+ 		<script type="text/javascript" src="lib/L.Control.Locate.js"></script>
  		<script type="text/javascript" src="lib/Control.FullScreen.js"></script>
- 		<script type="text/javascript" src="lib/L.Control.Zoomslider.js" ></script>
- 		<script type="text/javascript" src="lib/leaflet.markercluster.js" ></script>
- 		<script type="text/javascript" src="js/map-up.js" ></script>
+ 		<script type="text/javascript" src="lib/L.Control.Zoomslider.js"></script>
+ 		<script type="text/javascript" src="lib/leaflet.markercluster.js"></script>
+ 		<script type="text/javascript" src="js/map-up.js"></script>
 
-		<!-- Favourite icon -->
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	</head>
 	<body>
 		<noscript>
-	  		<p>Bienvenido a Mapa del Reciclaje</p>
+	  		<p>Bienvenido al mapa del reciclaje</p>
 	  		<p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript. 
 	  			Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.
 	  		</p>
 		</noscript>
-		<div id="fb-root"> </div>
-		<div id="header" style="position: absolute; top: 0%; left: 0; width: 100%; height: 10%;">
-			<div id="left-header" style="float: left; width: 20%;">
+		<div id="header" class="with-text">
+			<div id="left-header">
 				<p>Logotipo</p>
 			</div>
-			<div id="central-header" style="float: left; width: 60%;">
-					<p>Mapa del reciclaje</p>
+			<div id="central-header">
+				<p>Mapa del reciclaje</p>
 			</div>
-			<div id="right-header" style="float: left; width: 20%;">
+			<div id="right-header">
 				<ul>
-					<li><div class="fb-follow" data-href="https://www.facebook.com/zuck" data-layout="button_count" data-show-faces="true" data-width="450"> </div></li>
-					<li><a href="https://twitter.com/maparecicla_es" rel="nofollow" class="twitter-follow-button" data-show-count="true" data-lang="es"> </a></li>
-					<li><a href="https://twitter.com/share" rel="nofollow" class="twitter-share-button" data-lang="es"> </a></li>
+					<li><a href="https://www.facebook.com/maparecicla_es" rel="nofollow" class="fb-follow">Facebook</a></li>
+					<li><a href="https://twitter.com/maparecicla_es" rel="nofollow" class="twitter-follow-button">Twitter</a></li>
 				</ul>
 			</div>
 		</div>
-		<div id="map" style="position: absolute; top: 10%; left: 0; width: 100%; height: 85%;"> </div>
-		<div id="bottom" style="position: absolute; top: 95%; left: 0; width: 100%; height: 10%;">
-			<a href="mailto:contacto@mapadelreciclaje.hol.es?Subject=Contacto" rel="nofollow">Contacto</a>
+		<div id="map"> </div>
+		<div id="bottom" class="with-text">
+			<div id="left-bottom">
+				<p>...</p>
+			</div>
+			<div id="central-bottom">
+				<p>&copy; 2013 ...</p>
+			</div>
+			<div id="right-bottom">
+				<a href="mailto:contacto@mapadelreciclaje.hol.es?Subject=Contacto" rel="nofollow">Contacto</a>
+			</div>
 		</div>
 		
-		<!-- GeoSearch: https://github.com/smeijer/L.GeoSearch -->
+		<script type="text/javascript" src="js/map-down.js"></script>
 		<script type="text/javascript" src="lib/l.geosearch.provider.openstreetmap.js"></script>
-		<script type="text/javascript" src="js/map-down.js" ></script>
 	</body>
 </html>
