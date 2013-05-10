@@ -12,7 +12,7 @@ var map = L.map('map');
 // Current location
 map.locate({
 	setView : true,
-	maxZoom : 18
+	maxZoom : 14
 });
 
 // Location control			
@@ -31,7 +31,7 @@ L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution : 'Maps by &copy; <a href="http://openstreetmap.org" rel="nofollow" target="_blank">OpenStreetMap<\/a> contributors \
 	 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/" rel="nofollow" target="_blank">\
 	 <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png" /><\/a>',
-	maxZoom : 18
+	maxZoom : 14
 }).addTo(map);
 
 // Add metric scale

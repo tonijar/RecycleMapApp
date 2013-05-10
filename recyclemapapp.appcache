@@ -1,7 +1,10 @@
 CACHE MANIFEST
+css/map.css
 csv/locations.csv
-images/recycle-marker-favicon.png
+favicon.ico
 images/recycle-marker-icon-black-min.png
+js/map-down.js
+js/map-up.js
 lib/images/*.png
 lib/*.js
 lib/*.css
