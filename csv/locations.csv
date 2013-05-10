@@ -1,51 +1,74 @@
-﻿Nombre;Dirección;Código postal;Localidad;Provincia;Teléfono;Web;lat;lng
-Punt Blau 1 (Carretera de Castellar);Carretera de Prats de Lluçanès, 899;08207;Sabadell;Barcelona;900222234;http://bit.ly/10cfCOC;41.5741446;2.0940998
-Punt Blau 2 (Parc Central del Vallès);Carrer Moragas i Barret;08204;Sabadell;Barcelona;900222234;http://bit.ly/18DIbbF;41.5222042;2.1091547
-Punt Blau 3 (Can Llong);Ronda Europa 310;08206;Sabadell;Barcelona;900222234;http://bit.ly/15gbEMB;41.5562405;2.0812215
-Punt Verd de Zona - Deixalleria de Les Corts-Pedralbes;Avinguda Esplugues, 58;08034;Barcelona;Barcelona;932032219;http://bit.ly/101SgOy;41.3890168;2.1081328
-Punt Verd de Zona - Deixalleria de Vallbona;Castelladral, 6;08033;Barcelona;Barcelona;933502140;http://bit.ly/126qorv;41.4638776;2.185253
-Punt Verd de Zona - Deixalleria de Montjuïc;Carrer Foc 56;08038;Barcelona;Barcelona;932231646;http://bit.ly/15gbLHT;41.3553116;2.1396156
-Punt Verd de Zona - Deixalleria Fòrum;Avinguda Litoral 115;08005;Barcelona;Barcelona;933560929;http://bit.ly/ZGTeQL;41.403673;2.2158595
-Punt Verd de Zona - Deixalleria de Collserola;Carrer Collserola 2;08035;Barcelona;Barcelona;934178128;http://bit.ly/18DIF1g;41.4162968;2.1361024
-Punt Verd de Zona - Deixalleria Sant Andreu;Carrer Caracas 46;08030;Barcelona;Barcelona;933457623;http://bit.ly/ZuUBhQ;41.4455409;2.2023375
-Punt Verd de Zona - Deixalleria Vall d'Hebron;Avinguda Estatut de Catalunya 23;08035;Barcelona;Barcelona;934280496;http://bit.ly/128k7vt;41.432327;2.15347
-Punt Verd de Barri - Vallvidrera;Carrer Reis Catòlics 40;08017;Barcelona;Barcelona;650437469;http://bit.ly/137s1HK;41.4164437;2.1014137
-Punt Verd de Barri - Sant Andreu;Carrer Rovira i Virgili 14;08030;Barcelona;Barcelona;933456358;http://bit.ly/YuCQnE;41.428138;2.1889936
-Punt Verd de Barri - Folch i Torres;Plaça Josep M Folch i Torres 1;08001;Barcelona;Barcelona;690860273;http://bit.ly/128kzKa;41.376434;2.1670871
-Punt Verd de Barri - Barcardí;Travessera de les Corts 122;08028;Barcelona;Barcelona;934901397;http://bit.ly/128kPZF;41.3799469;2.1259914
-Punt Verd de Barri - Turó de la Peira;Passeig Peira 1;08031;Barcelona;Barcelona;933575063;http://bit.ly/10flAhq;41.431112;2.169626
-Punt Verd de Barri - Ciutat Meridiana;Carrer Costabona 4;08033;Barcelona;Barcelona;932765890;http://bit.ly/169hsqH;41.4616847;2.177785
-Punt Verd de Barri - Les Roquetes;Carrer Aiguablava 1;08042;Barcelona;Barcelona;933536901;http://bit.ly/11L3O7p;41.4474105;2.180266
-Punt Verd de Barri - Clot;Carrer Escultors Claperós 51;08018;Barcelona;Barcelona;679952176;http://bit.ly/ZIBEfa;41.4070489;2.189572
-Punt Verd de Barri - Barceloneta;Passeig Salvat Papasseit 3;08003;Barcelona;Barcelona;609116999;http://bit.ly/12E6cvR;41.3816961;2.1917977
-Punt Verd de Barri - Les Corts;Carrer Nicaragua 101;08029;Barcelona;Barcelona;934104701;http://bit.ly/ZxmmX5;41.3856918;2.1380072
-Punt Verd de Barri - La Bordeta;Carrer Corral 2;08014;Barcelona;Barcelona;934329735;http://bit.ly/12E6EKD;41.3702383;2.1405678
-Punt Verd de Barri - Fort Pienc;Carrer Alí Bei 89;08013;Barcelona;Barcelona;618711750;http://bit.ly/18mDhT1;41.3951907;2.1828407
-Punt Verd de Barri - Sagrada Família;Carrer Lepant 281;08013;Barcelona;Barcelona;934366312;http://bit.ly/15iBlvF;41.405023;2.1757284
-Punt Verd de Barri - Sant Martí de Provençals;Carrer Andrade 154;08020;Barcelona;Barcelona;933037008;http://bit.ly/139CgLB;41.4157803;2.201056
-Punt Verd de Barri - Sant Andreu Nord;Plaça Miquel Casablancas i Joanico 4;08030;Barcelona;Barcelona;933468029;http://bit.ly/YwCMnw;41.439847;2.186192
-Punt Verd de Barri - Poble Sec;Carrer Palaudàries 12;08004;Barcelona;Barcelona;650437468;http://bit.ly/1173XXC;41.3850639;2.1734035
-Punt Verd de Barri - Horta-Carmel;Carrer Dante Alighieri 77;08032;Barcelona;Barcelona;630359356;http://bit.ly/10zLtHU;41.4275839;2.1577167
-Punt Verd de Barri - Horta-Guinardó;Carrer Mas Casanovas 74;08041;Barcelona;Barcelona;690662352;http://bit.ly/15iEnA9;41.4144521;2.1727264
-Punt Verd de Barri - Gal·la Placídia;Plaça Gal.la Placídia 12;08006;Barcelona;Barcelona;690662353;http://bit.ly/128nPVW;41.3991111;2.1534235
-Punt Verd de Barri - Nova Esquerra de l'Eixample;Carrer Rocafort 226;08029;Barcelona;Barcelona;660809341;http://bit.ly/169jR4H;41.3852864;2.1454802
-Punt Verd de Barri Col·laborador - Can Basilio;Carrer Jaume Giralt 49;08003;Barcelona;Barcelona;933190125;http://bit.ly/13fDtAb;41.387818;2.178895
-Punt Verd de Barri Col·laborador - Tabuenca;Carrer Guilleries 24;08012;Barcelona;Barcelona;932183097;http://bit.ly/13VCV20;41.4036409;2.1563837
-Punto Limpio de Arrecife;Avenida de los Geranios s/n;35500;Arrecife;Las Palmas;928810100;http://bit.ly/126qwr4;28.9762136;-13.5561222
-Punto Limpio de Playa Honda;Zona industrial de Playa Honda, Calle Arrecife;35509;Playa Honda;Las Palmas;928810100;http://bit.ly/126qwr4;28.9539476;-13.5914198
-Punto Limpio de Playa Blanca;Calle Femés;35580;Playa Blanca;Las Palmas;928810100;http://bit.ly/126qwr4;28.865;-13.8305556
-Punto Limpio de Puerto del Carmen;Calle Tías;35510;Puerto del Carmen;Las Palmas;928810100;http://bit.ly/126qwr4;28.9239086;-13.6632734
-Punto Limpio Lomo del Jable (Lajares);La Oliva;35640;La Oliva;Las Palmas;928862300;http://bit.ly/109qITq;28.6100767;-13.9267252
-Punto Limpio Risco Prieto;Puerto del Rosario;35649;Puerto del Rosario;Las Palmas;928862300;http://bit.ly/109qITq;28.5310413;-13.9376021
-Punto Limpio Fuente Bartolo;Tuineje;35629;Tuineje;Las Palmas;928862300;http://bit.ly/109qITq;28.327262;-14.047254
-Deixalleria D'Abrera;Polígono industrial Sant Armengol Calle Progrés 15;08630;Abrera;Barcelona;937448321;http://bit.ly/18RzXwu;41.5188822;1.8923452
-Deixalleria D'Aiguafreda;Calle Avençó s/n;08591;Aiguafreda;Barcelona;938442253;http://bit.ly/12dpUQl;41.76846;2.25144
-Deixalleria D'Arenys De Munt I D'Arenys De Mar;Polígon Calle Torrent d'en Puig s/n;08350;Arenys De Munt;Barcelona;937938985;http://bit.ly/ZMWxpx;41.606410;2.531211
-Deixalleria D'Argentona;Polígon Industrial Nord;08310;Argentona;Barcelona;937561448;http://bit.ly/15xKocd;41.568076;2.394664
-Deixalleria D'Artés;Polígono Industrial Santa María, Calle Sant Jordi s/n;08271;Artés;Barcelona;938203818;http://bit.ly/10DW5W9;41.788465;1.937025
-Deixalleria D'Avinyó;Polígono Industrial Ponsit;08279;Avinyó;Barcelona;938387700;http://bit.ly/ZMXWMP;41.855558;1.970817
-Deixalleria De Badalona Gorg;Calle Guifré 680;08912;Badalona;Barcelona;934604654;http://bit.ly/108vzIK;41.4354563;2.2315771
-Deixalleria De Badalona Pomar;Avinguda Cerdanya s/n;08911;Badalona;Barcelona;935970234;http://bit.ly/108vzIK;41.46537;2.243055
-Minideixalleria De Badia Del Vallès;Vía de la Plata;08214;Badia Del Vallès;Barcelona;937186614;http://bit.ly/12al9Ir;41.509252;2.112474
-Deixalleria De Badia Del Vallès;Avenida Costa Brava;08214;Badia Del Vallès;Barcelona;937186302;http://bit.ly/12al9Ir;41.50742;2.118954
-Deixalleria De Balsareny;Polígon industrial Les Mayoles;08660;Balsareny;Barcelona;938200324;http://bit.ly/18rqMFR;41.861938;1.873865
+﻿Nombre;Dirección;Código postal;Localidad;Provincia;Web;lat;lng
+Punt Blau 1 (Carretera de Castellar);Carretera de Prats de Lluçanès, 899;08207;Sabadell;Barcelona;http://bit.ly/10cfCOC;41.5741446;2.0940998
+Punt Blau 2 (Parc Central del Vallès);Carrer Moragas i Barret;08204;Sabadell;Barcelona;http://bit.ly/18DIbbF;41.5222042;2.1091547
+Punt Blau 3 (Can Llong);Ronda Europa 310;08206;Sabadell;Barcelona;http://bit.ly/15gbEMB;41.5562405;2.0812215
+Punt Verd de Zona - Deixalleria de Les Corts-Pedralbes;Avinguda Esplugues, 58;08034;Barcelona;Barcelona;http://bit.ly/101SgOy;41.3890168;2.1081328
+Punt Verd de Zona - Deixalleria de Vallbona;Castelladral, 6;08033;Barcelona;Barcelona;http://bit.ly/126qorv;41.4638776;2.185253
+Punt Verd de Zona - Deixalleria de Montjuïc;Carrer Foc 56;08038;Barcelona;Barcelona;http://bit.ly/15gbLHT;41.3553116;2.1396156
+Punt Verd de Zona - Deixalleria Fòrum;Avinguda Litoral 115;08005;Barcelona;Barcelona;http://bit.ly/ZGTeQL;41.403673;2.2158595
+Punt Verd de Zona - Deixalleria de Collserola;Carrer Collserola 2;08035;Barcelona;Barcelona;http://bit.ly/18DIF1g;41.4162968;2.1361024
+Punt Verd de Zona - Deixalleria Sant Andreu;Carrer Caracas 46;08030;Barcelona;Barcelona;http://bit.ly/ZuUBhQ;41.4455409;2.2023375
+Punt Verd de Zona - Deixalleria Vall d'Hebron;Avinguda Estatut de Catalunya 23;08035;Barcelona;Barcelona;http://bit.ly/128k7vt;41.432327;2.15347
+Punt Verd de Barri - Vallvidrera;Carrer Reis Catòlics 40;08017;Barcelona;Barcelona;http://bit.ly/137s1HK;41.4164437;2.1014137
+Punt Verd de Barri - Sant Andreu;Carrer Rovira i Virgili 14;08030;Barcelona;Barcelona;http://bit.ly/YuCQnE;41.428138;2.1889936
+Punt Verd de Barri - Folch i Torres;Plaça Josep M Folch i Torres 1;08001;Barcelona;Barcelona;http://bit.ly/128kzKa;41.376434;2.1670871
+Punt Verd de Barri - Barcardí;Travessera de les Corts 122;08028;Barcelona;Barcelona;http://bit.ly/128kPZF;41.3799469;2.1259914
+Punt Verd de Barri - Turó de la Peira;Passeig Peira 1;08031;Barcelona;Barcelona;http://bit.ly/10flAhq;41.431112;2.169626
+Punt Verd de Barri - Ciutat Meridiana;Carrer Costabona 4;08033;Barcelona;Barcelona;http://bit.ly/169hsqH;41.4616847;2.177785
+Punt Verd de Barri - Les Roquetes;Carrer Aiguablava 1;08042;Barcelona;Barcelona;http://bit.ly/11L3O7p;41.4474105;2.180266
+Punt Verd de Barri - Clot;Carrer Escultors Claperós 51;08018;Barcelona;Barcelona;http://bit.ly/ZIBEfa;41.4070489;2.189572
+Punt Verd de Barri - Barceloneta;Passeig Salvat Papasseit 3;08003;Barcelona;Barcelona;http://bit.ly/12E6cvR;41.3816961;2.1917977
+Punt Verd de Barri - Les Corts;Carrer Nicaragua 101;08029;Barcelona;Barcelona;http://bit.ly/ZxmmX5;41.3856918;2.1380072
+Punt Verd de Barri - La Bordeta;Carrer Corral 2;08014;Barcelona;Barcelona;http://bit.ly/12E6EKD;41.3702383;2.1405678
+Punt Verd de Barri - Fort Pienc;Carrer Alí Bei 89;08013;Barcelona;Barcelona;http://bit.ly/18mDhT1;41.3951907;2.1828407
+Punt Verd de Barri - Sagrada Família;Carrer Lepant 281;08013;Barcelona;Barcelona;http://bit.ly/15iBlvF;41.405023;2.1757284
+Punt Verd de Barri - Sant Martí de Provençals;Carrer Andrade 154;08020;Barcelona;Barcelona;http://bit.ly/139CgLB;41.4157803;2.201056
+Punt Verd de Barri - Sant Andreu Nord;Plaça Miquel Casablancas i Joanico 4;08030;Barcelona;Barcelona;http://bit.ly/YwCMnw;41.439847;2.186192
+Punt Verd de Barri - Poble Sec;Carrer Palaudàries 12;08004;Barcelona;Barcelona;http://bit.ly/1173XXC;41.3850639;2.1734035
+Punt Verd de Barri - Horta-Carmel;Carrer Dante Alighieri 77;08032;Barcelona;Barcelona;http://bit.ly/10zLtHU;41.4275839;2.1577167
+Punt Verd de Barri - Horta-Guinardó;Carrer Mas Casanovas 74;08041;Barcelona;Barcelona;http://bit.ly/15iEnA9;41.4144521;2.1727264
+Punt Verd de Barri - Gal·la Placídia;Plaça Gal.la Placídia 12;08006;Barcelona;Barcelona;http://bit.ly/128nPVW;41.3991111;2.1534235
+Punt Verd de Barri - Nova Esquerra de l'Eixample;Carrer Rocafort 226;08029;Barcelona;Barcelona;http://bit.ly/169jR4H;41.3852864;2.1454802
+Punt Verd de Barri Col·laborador - Can Basilio;Carrer Jaume Giralt 49;08003;Barcelona;Barcelona;http://bit.ly/13fDtAb;41.387818;2.178895
+Punt Verd de Barri Col·laborador - Tabuenca;Carrer Guilleries 24;08012;Barcelona;Barcelona;http://bit.ly/13VCV20;41.4036409;2.1563837
+Deixalleria D'Abrera;Polígono industrial Sant Armengol Calle Progrés 15;08630;Abrera;Barcelona;http://bit.ly/18RzXwu;41.5188822;1.8923452
+Deixalleria D'Aiguafreda;Calle Avençó s/n;08591;Aiguafreda;Barcelona;http://bit.ly/12dpUQl;41.76846;2.25144
+Deixalleria D'Arenys De Munt I D'Arenys De Mar;Polígon Calle Torrent d'en Puig s/n;08350;Arenys De Munt;Barcelona;http://bit.ly/ZMWxpx;41.606410;2.531211
+Deixalleria D'Argentona;Polígon Industrial Nord;08310;Argentona;Barcelona;http://bit.ly/15xKocd;41.568076;2.394664
+Deixalleria D'Artés;Polígono Industrial Santa María, Calle Sant Jordi s/n;08271;Artés;Barcelona;http://bit.ly/10DW5W9;41.788465;1.937025
+Deixalleria D'Avinyó;Polígono Industrial Ponsit;08279;Avinyó;Barcelona;http://bit.ly/ZMXWMP;41.855558;1.970817
+Deixalleria De Badalona Gorg;Calle Guifré 680;08912;Badalona;Barcelona;http://bit.ly/108vzIK;41.4354563;2.2315771
+Deixalleria De Badalona Pomar;Avinguda Cerdanya s/n;08911;Badalona;Barcelona;http://bit.ly/108vzIK;41.46537;2.243055
+Minideixalleria De Badia Del Vallès;Vía de la Plata;08214;Badia Del Vallès;Barcelona;http://bit.ly/12al9Ir;41.509252;2.112474
+Deixalleria De Badia Del Vallès;Avenida Costa Brava;08214;Badia Del Vallès;Barcelona;http://bit.ly/12al9Ir;41.50742;2.118954
+Deixalleria De Balsareny;Polígon industrial Les Mayoles;08660;Balsareny;Barcelona;http://bit.ly/18rqMFR;41.861938;1.873865
+Punto Limpio de Arrecife;Avenida de los Geranios s/n;35500;Arrecife;Las Palmas;http://bit.ly/126qwr4;28.9762136;-13.5561222
+Punto Limpio de Playa Honda;Zona industrial de Playa Honda, Calle Arrecife;35509;Playa Honda;Las Palmas;http://bit.ly/126qwr4;28.9539476;-13.5914198
+Punto Limpio de Playa Blanca;Calle Femés;35580;Playa Blanca;Las Palmas;http://bit.ly/126qwr4;28.865;-13.8305556
+Punto Limpio de Puerto del Carmen;Calle Tías;35510;Puerto del Carmen;Las Palmas;http://bit.ly/126qwr4;28.9239086;-13.6632734
+Punto Limpio Lomo del Jable (Lajares);La Oliva;35640;La Oliva;Las Palmas;http://bit.ly/109qITq;28.6100767;-13.9267252
+Punto Limpio Risco Prieto;Puerto del Rosario;35649;Puerto del Rosario;Las Palmas;http://bit.ly/109qITq;28.5310413;-13.9376021
+Punto Limpio Fuente Bartolo;Tuineje;35629;Tuineje;Las Palmas;http://bit.ly/109qITq;28.327262;-14.047254
+Punto Limpio Breña Baja;Calle Cabecera Norte del Aeropuerto,s/n;38712;Breña Baja;Santa Cruz de Tenerife;http://bit.ly/16mJ7Vg;28.6412969;-17.7724671
+Punto Limpio Los Llanos de Aridane;Poligono Industrial Callejón de la Gata,s/n;38760;Los Llanos de Aridane;Santa Cruz de Tenerife;http://bit.ly/16mJ7Vg;28.6602362;-17.9131874
+Punto Limpio Puntallana;Calle La Galga,s/n;38715;Puntallana;Santa Cruz de Tenerife;http://bit.ly/16mJ7Vg;28.7397804;-17.7454647
+Punto Limpio Tijarafe;Carretera Barranco Jurado,s/n;38780;Tijarafe;Santa Cruz de Tenerife;http://bit.ly/16mJ7Vg;28.7110909;-17.9561807
+Punto Limpio de Adeje;Cruce de Armeñime;38670;Adeje;Santa Cruz de Tenerife;http://bit.ly/15wzuUw;28.127125;-16.745468
+Punto Limpio de Arona;Malpaso de Guaza;38640;Arona;Santa Cruz de Tenerife;http://bit.ly/15wzuUw;28.064445;-16.664568
+Punto Limpio de Güimar;Valle de Güimar;38500;Güimar;Santa Cruz de Tenerife;http://bit.ly/15wzuUw;28.320155;-16.377615
+Punto Limpio de Taco;Carretera General La Cuesta -Taco;38108;La Laguna;Santa Cruz de Tenerife;http://bit.ly/15wzuUw;28.44894;-16.296591
+Punto Limpio de Buenavista;Los Pasitos;38480;Los Pasitos;Santa Cruz de Tenerife;http://bit.ly/15wzuUw;28.361340;-16.848352
+Punto Limpio de la Guancha;Carretera de subida a La Guancha;38440;La Guancha;Santa Cruz de Tenerife;http://bit.ly/15wzuUw;28.385171;-16.6774
+Punto Limpio de la Orotava;Polígono Industrial San Jerónimo;38300;La Orotava;Santa Cruz de Tenerife;http://bit.ly/15wzuUw;28.396558;-16.541763
+Punto Limpio de Jagua;Barranco de Jagua;38120;Santa Cruz de Tenerife;Santa Cruz de Tenerife;http://bit.ly/15wzuUw;28.3858;-16.660607
+Punto Limpio San Sebastián de la Gomera;San Sebastián de la Gomera;38800;La Gomera;Santa Cruz de Tenerife;http://bit.ly/17RzYSC;28.080337;-17.128585
+Punto Limpio de Frontera;Calle el Matorral;38911;El Hierro;Santa Cruz de Tenerife;http://bit.ly/17RzYSC;27.71252;-18.027817
+Punto Limpio de Valverde;Poligono industrial el Majano;38900;El Hierro;Santa Cruz de Tenerife;http://bit.ly/17RzYSC;27.775404;-17.939386
+Punto Limpio Las Rubiesas;Prolongación C/Ignacio Martín Baró s/n. Polígono Industrial Las Rubiesas;35214;Telde;Las Palmas;http://bit.ly/11qrAL3;27.997944;-15.388974
+Punto Limpio de Vencidario;Avda. del Atlántico s/n;35110;Vecindario T.M. Santa Lucia de Tirajana;Las Palmas;http://bit.ly/ZNOk16;27.845205;-15.438842
+Punto Limpio de La Aldea;Las Marciegas;;T. M. Aldea de San Nicolás;Las Palmas;http://bit.ly/ZNOk16;27.998323;-15.816346
+Punto Limpio de San Fernando de Maspalomas;Ctra. GC-504 (Carretera Palmitos Park), km. 0,5;35100;Maspalomas T.M, San Bartolomé‚ de Tirajana;Las Palmas;http://bit.ly/ZNOk16;27.783154;-15.608431
+Punto Limpio de Llano Alegre;Ctra. C-813. Llano Alegre s/n;35457;T.M. Santa María de Guía;Las Palmas;http://bit.ly/ZNOk16;28.112854;-15.685999
+Punto Limpio Cardones;C/ Lomo el Perdigón s/n T;35415;T.M. Arucas;Las Palmas;http://bit.ly/198Yld7;28.128763;-15.505123
+Punto Limpio El sebadal;C/Sao Paulo, nº 28;35008;T.M. Las Palmas de Gran Canaria;Las Palmas;http://bit.ly/198Yld7;28.158308;-15.415114
+Punto Limpio El Batán;C/Severo Ochoa s/n;35015;T.M. Las Palmas de Gran Canaria;Las Palmas;http://bit.ly/198Yld7;28.093415;-15.425939
