@@ -14,6 +14,19 @@ function distanceBetweenPoints(x, y, x0, y0) {
 	return Math.sqrt((x -= x0) * x + (y -= y0) * y);
 }
 
+// Opens new window with route to the destination point
+function routeToPoint(lat, lng) {
+	var origin;
+	if(currentLocation) {
+		origin = currentLocation;
+	}
+	else {
+		origin = map.getCenter();
+	}
+	window.open("http://openrouteservice.org/index.php?start=" + origin.latlng.lat + 
+		"," + origin.latlng.lng + "&end=" + lat + "," + lng + "&zoom=14&pref=Fastest&lang=es");
+}
+
 // Show map centered at current position.
 var map = L.map('map', {zoom: 14});
 // Current location
@@ -77,7 +90,8 @@ geo_csv = L.geoCsv(null, {
 				popup += '<b>' + feature.properties[clave] + '<\/b>';
 			}
 			else if (title == "Web") {
-				popup += '<a href="' + feature.properties[clave] + '" rel="nofollow" target="_blank">Web del punto de reciclaje<\/a>';
+				popup += '<a href="' + feature.properties[clave] + '" rel="nofollow" target="_blank"><img src="images/www-min.png" title="Web del punto de reciclaje"/><\/a>';
+				popup += '<a href="#" onclick="routeToPoint(' + layer._latlng.lat + "," + layer._latlng.lng + ')" rel="nofollow"><img src="images/person-min.png" title="Cómo llegar"/><\/a>';
 			}
 			else {
 				popup += '<b>' + title + ': <\/b>';
