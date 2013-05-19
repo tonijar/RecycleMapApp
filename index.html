@@ -13,6 +13,8 @@
 		<link rel="stylesheet" type="text/css" href="lib/Control.FullScreen.css"/>
 		<link rel="stylesheet" type="text/css" href="lib/L.Control.Zoomslider.css"/>
 		<link rel="stylesheet" type="text/css" href="lib/MarkerCluster.Default.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/text.css"/>
 		<link rel="stylesheet" type="text/css" href="css/map.css"/>
 
 		<script type="text/javascript" src="lib/leaflet.js"></script>
@@ -24,6 +26,7 @@
  		<script type="text/javascript" src="lib/L.Control.Zoomslider.js"></script>
  		<script type="text/javascript" src="lib/leaflet.markercluster.js"></script>
  		<script type="text/javascript" src="js/map-up.js"></script>
+ 		<script type="text/javascript" src="lib/adapt.min.js"></script>
 
 		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	</head>
@@ -34,31 +37,35 @@
 	  			Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.
 	  		</p>
 		</noscript>
-		<div id="header">
-			<div id="left-header">
-				<img id="logo" src="images/recycle-marker-icon-black-min.png" />
+		<div id="main" class="container_12">
+			<div id="left-header" class="grid_4">
+				<img id="logo" src="images/map-logo.png" />
 			</div>
-			<div id="central-header" class="with-text">
-				<p>Mapa del reciclaje</p>
+			<div id="central-header" class="grid_6">
+				<p id="title">Bienvenido al mapa del reciclaje</p>
+				<p id="explanation">Busca, encuentra y recicla</p>
 			</div>
-			<div id="right-header">
-				<a href="https://www.facebook.com/maparecicla_es" rel="nofollow" class="fb-follow" target="_blank">Facebook</a>
-				<a href="https://twitter.com/maparecicla_es" rel="nofollow" class="twitter-follow-button" target="_blank">Twitter</a>
+			<div id="right-header" class="grid_2">
+				<a href="https://www.facebook.com/maparecicla_es" rel="nofollow" title="Facebook" target="_blank">
+					<img id="facebook" src="images/facebook-button(2).png" />
+				</a>
+				<a href="https://twitter.com/maparecicla_es" rel="nofollow" title="Twitter" target="_blank">
+					<img id="twitter" src="images/twitter-button(2).png" />
+				</a>
 			</div>
-		</div>
-		<div id="center">
-			<div id="map"> </div>
-		</div>
-		<div id="bottom" class="with-text">
-			<div id="left-bottom">
-				<p>...</p>
+			<div class="clear"> </div>
+			<div id="map" class="prefix_1 grid_10 suffix_1"> </div>
+			<div class="clear"> </div>
+			<div id="left-bottom" class="alpha grid_2">
+				<p>Proyecto personal</p>
 			</div>
-			<div id="central-bottom">
-				<p>&copy; 2013 ...</p>
+			<div id="central-bottom" class="grid_6">
+				<p>&copy; 2013 Toni Jara</p>
 			</div>
-			<div id="right-bottom">
+			<div id="right-bottom" class="grid_4 omega">
 				<a href="mailto:contacto@mapadelreciclaje.hol.es?Subject=Contacto" rel="nofollow">Contacto</a>
 			</div>
+			<div class="clear"> </div>
 		</div>
 		
 		<script type="text/javascript" src="lib/l.geosearch.provider.openstreetmap.js"></script>
